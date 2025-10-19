@@ -5,10 +5,10 @@ This report documents the CMOS design and SPICE simulation activities based on t
 ___
 ## Experiment 1: MOSFET Behavior & $I_d$ vs $V_{ds}$ Characteristics
 
-#### Purpose
+### Purpose
 To simulate a single NMOS device, sweeping the drain-to-source voltage ($V_{ds}$) for various gate-to-source voltages ($V_{gs}$). This allows for the observation and plotting of the transistor's linear and saturation operating regions.
 
-#### SPICE Netlist
+### SPICE Netlist
 
 ```spice
 *Model Description
@@ -37,10 +37,11 @@ setplot dc1
 .end
 ```
 
-#### $I_d$ vs $V_{ds}$ Characteristic Curve
-!(Id vs Vds curves)[images/Exp 1 - Id vs Vds curves.svg]
+### $I_d$ vs $V_{ds}$ Characteristic Curve
 
-#### Analysis
+![Id vs Vds curves](images/Exp%201%20-%20Id%20vs%20Vds%20curves.svg)
+
+### Analysis
 
 - **Observations:** The plot shows that for a given gate voltage ($V_{gs}$) above the threshold, the drain current ($I_d$) first rises linearly with $V_{ds}$ (Linear Region) and then flattens out, becoming largely independent of $V_{ds}$ (Saturation Region). Higher $V_{gs}$ values result in higher saturation currents.
     
@@ -51,10 +52,10 @@ setplot dc1
 ___
 ## Experiment 2: Threshold Voltage Extraction & Velocity Saturation
 
-#### Purpose
+### Purpose
 To sweep $V_{gs}$ vs. $I_d$ (in the saturation region) to extract the threshold voltage ($V_t$) and observe short-channel effects like velocity saturation and Channel Length Modulation (CLM).
 
-#### SPICE Netlist
+### SPICE Netlist
 
 1. $I_d$ vs $V_{ds}$ Characteristic Curve
 	
@@ -114,18 +115,21 @@ To sweep $V_{gs}$ vs. $I_d$ (in the saturation region) to extract the threshold 
     .end
 ```    
 
-#### Plots
+### Plots
 
 1. $I_d$ vs $V_{ds}$ Characteristic Curve
-    !(Id vs Vds Curve)[images/Exp 2 - Id vs Vds.svg]
-2. $I_d$ vs $V_{gs}$ Characteristic Curve
-    !(Id vs Vgs Curve)[images/Exp 2 - VT.svg]
+   
+    ![Id vs Vds Curve](images/Exp%202%20-%20Id%20vs%20Vds.svg)
 
-#### Annotations
-- Peak Current, $I_{d_{max}}$ = 196.77 $\mu$A
+2. $I_d$ vs $V_{gs}$ Characteristic Curve
+
+    ![Id vs Vgs Curve](images/Exp%202%20-%20VT.svg)
+
+### Annotations
+- Peak Current, $I_{d_{max}}$ = 196.77 μA
 - Threshold Voltage, $V_t$ = 0.77 V
 
-#### Analysis
+### Analysis
 
 - **Observations:** From the $I_d$ vs $V_{gs}$ plot, the transistor turns on sharply after a threshold voltage ($V_t$) of ~0.77V. At high $V_{gs}$, the current increases almost linearly, not quadratically. The $I_d$ vs $V_{ds}$ plot for this short-channel device shows that the curves in saturation have a noticeable positive slope.
     
@@ -136,10 +140,10 @@ To sweep $V_{gs}$ vs. $I_d$ (in the saturation region) to extract the threshold 
 ___
 ## Experiment 3: CMOS Inverter - Voltage Transfer Characteristic (VTC)
 
-#### Purpose
+### Purpose
 To build a standard CMOS inverter and generate its VTC to identify the switching threshold ($V_m$).
 
-#### SPICE Netlist
+### SPICE Netlist
 
 ```spice
 *Model Description
@@ -168,13 +172,13 @@ display
 .end
 ```
 
-#### Voltage Transfer Characteristic Curve
-!(Voltage Transfer Characteristic Curve)[images/Exp 3 - VTC.svg]
+### Voltage Transfer Characteristic Curve
+![Voltage Transfer Characteristic Curve](images/Exp%203%20-%20VTC.svg)
 
-#### Annotations
+### Annotations
 - Switching threshold, $V_m$ = 0.88 V
 
-#### Analysis
+### Analysis
 
 - **Observations:** The VTC plot shows a sharp, high-gain transition from a high output (1.8V) to a low output (0V). The switching threshold ($V_m$), where $V_{in} = V_{out}$, is 0.88V, which is very close to half the supply voltage ($V_{dd}/2 = 0.9V$), indicating a symmetric inverter.
     
@@ -185,10 +189,10 @@ display
 ___
 ## Experiment 4: Transient Behavior - Rise / Fall Delays
 
-#### Purpose
+### Purpose
 To apply a pulse input to the inverter and measure the rise and fall propagation delays ($t_{pr}$ and $t_{pf}$).
 
-#### SPICE Netlist
+### SPICE Netlist
 
 ```spice
 *Model Description
@@ -214,14 +218,14 @@ run
 .end
 ```
 
-#### Transient Waveform
-!(Transient Waveform)[images/Exp 4 - Rise and Fall Delay.svg]
+### Transient Waveform
+![Transient Waveform](images/Exp%204%20-%20Rise%20and%20Fall%20Delay.svg)
 
-#### Annotations
+### Annotations
 - Rise propagation delay, $t_{pr}$ = 0.33 ns
 - Fall propagation delay, $t_{pf}$ = 0.29 ns
 
-#### Analysis
+### Analysis
 
 - **Observations:** The simulation confirms the inverter's logical function and shows finite propagation delays. The fall delay (0.29 ns) is slightly shorter than the rise delay (0.33 ns).
     
@@ -232,10 +236,10 @@ run
 ___
 ## Experiment 5: Noise Margin / Robustness Analysis
 
-#### Purpose
+### Purpose
 To analyze the VTC plot to determine the static noise margins ($NM_L$ and $NM_H$), which quantify the inverter's robustness to noise.
 
-#### SPICE Netlist
+### SPICE Netlist
 
 ```spice
 *Model Description
@@ -264,14 +268,14 @@ display
 .end
 ```
 
-#### Voltage Transfer Characteristic Curve
-!(Voltage Transfer Characteristic Curve)[images/Exp 5 - Noise margin.svg]
+### Voltage Transfer Characteristic Curve
+![Noise Margin](images/Exp%205%20-%20Noise%20margin.svg)
 
-#### Annotations
+### Annotations
 - $NM_L = V_{IL} - V_{OL}$ = 0.78 - 0.12 = 0.66 V
 - $NM_H = V_{OH} - V_{IH}$ = 1.7 - 0.98 = 0.72 V
 
-#### Analysis
+### Analysis
 
 - **Observations:** By analyzing the VTC, the low and high noise margins ($NM_L$ and $NM_H$) are calculated to be 0.66V and 0.72V, respectively. These values are large and relatively symmetric.
     
@@ -282,10 +286,10 @@ display
 ___
 ## Experiment 6: Power-Supply and Device Variation Studies
 
-#### Purpose
+### Purpose
 To investigate the impact of voltage and process variations on inverter performance, observing the effects on the VTC and propagation delays.
 
-#### SPICE Netlist
+### SPICE Netlist
 
 1. Supply Voltage variation
     
@@ -377,18 +381,21 @@ To investigate the impact of voltage and process variations on inverter performa
     .end
 ```    
 
-#### Plots
+### Plots
 
 1. Voltage Transfer Characteristic (Supply Variation)
-!(Voltage Transfer Characteristic (Supply Variation))[images/Exp 6 - Supply variation.svg]
+
+   ![Voltage Transfer Characteristic (Supply Variation)](images/Exp%206%20-%20Supply%20variation.svg)
 
 2. Voltage Transfer Characteristic (Device Variation)
-!(Voltage Transfer Characteristic (Device Variation))[images/Exp 6 - Device variation.svg]
+
+   ![Voltage Transfer Characteristic (Device Variation)](images/Exp%206%20-%20Device%20variation.svg)
 
 3. Transient Waveform (Device Variation)
-!(Transient Waveform (Device Variation))[images/Exp 6 - Device variation pulse.svg]    
 
-#### Annotations
+   ![Transient Waveform (Device Variation)](images/Exp%206%20-%20Device%20variation%20pulse.svg)
+
+### Annotations
 - **Supply Variation:** Shifts in switching threshold    
 
 | $V_{dd}$ (V) | $V_m$ (V) |
@@ -412,7 +419,7 @@ To investigate the impact of voltage and process variations on inverter performa
         - Rise delay, $t_{pr}$ = 0.06 ns
         - Fall delay, $t_{pf}$ = 0.29 ns            
 
-#### Analysis
+### Analysis
 
 - **Observations:** Lowering the supply voltage ($V_{dd}$) reduces the switching threshold and noise margins, and softens the VTC transition. Increasing the PMOS strength relative to the NMOS shifts the switching threshold higher (to ~1.0V), drastically speeds up the rise time ($t_{pr}$), and has little effect on the fall time ($t_{pf}$).
     
