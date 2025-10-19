@@ -1,0 +1,139 @@
+<?xml version="1.0" standalone="yes"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+  width="100%" height="100%" viewBox="0 0 1024 768"
+  style="fill: none; font-family: Helvetica;
+ font: Helvetica;
+">
+
+<!-- Creator: NGspice -->
+
+<rect x="0" y="0" width="1024" height="768" fill="black" stroke="none"/>
+<text stroke="none" fill="white" font-size="16" x="358" y="752">
+"input voltage(V)"
+</text>
+<text transform="rotate(-90, 20, 479)"  stroke="none" fill="white" font-size="16" x="20" y="479">
+"output voltage(V)"
+</text>
+<text stroke="none" fill="white" font-size="16" x="10" y="16">
+dc6: "Inveter dc characteristics as a function of supply voltage"
+</text>
+<path stroke="white" d="M75 720l0 -666"/>
+<text stroke="none" fill="white" font-size="16" x="60" y="728">
+0.0
+</text>
+<path stroke="white" stroke-dasharray="1,2" d="M174 720l0 -666"/>
+<text stroke="none" fill="white" font-size="16" x="159" y="728">
+0.2
+</text>
+<path stroke="white" stroke-dasharray="1,2" d="M273 720l0 -666"/>
+<text stroke="none" fill="white" font-size="16" x="258" y="728">
+0.4
+</text>
+<path stroke="white" stroke-dasharray="1,2" d="M372 720l0 -666"/>
+<text stroke="none" fill="white" font-size="16" x="357" y="728">
+0.6
+</text>
+<path stroke="white" stroke-dasharray="1,2" d="M471 720l0 -666"/>
+<text stroke="none" fill="white" font-size="16" x="456" y="728">
+0.8
+</text>
+<path stroke="white" stroke-dasharray="1,2" d="M570 720l0 -666"/>
+<text stroke="none" fill="white" font-size="16" x="555" y="728">
+1.0
+</text>
+<path stroke="white" stroke-dasharray="1,2" d="M669 720l0 -666"/>
+<text stroke="none" fill="white" font-size="16" x="654" y="728">
+1.2
+</text>
+<path stroke="white" stroke-dasharray="1,2" d="M768 720l0 -666"/>
+<text stroke="none" fill="white" font-size="16" x="753" y="728">
+1.4
+</text>
+<path stroke="white" stroke-dasharray="1,2" d="M867 720l0 -666"/>
+<text stroke="none" fill="white" font-size="16" x="852" y="728">
+1.6
+</text>
+<path stroke="white" stroke-dasharray="1,2" d="M966 720l0 -666"/>
+<text stroke="none" fill="white" font-size="16" x="951" y="728">
+1.8
+</text>
+<text stroke="none" fill="white" font-size="16" x="614" y="752">
+V
+</text>
+<path stroke="white" d="M75 720l891 0"/>
+<text stroke="none" fill="white" font-size="16" x="43" y="728">
+0.0
+</text>
+<path stroke="white" stroke-dasharray="1,2" d="M75 646l891 0"/>
+<text stroke="none" fill="white" font-size="16" x="43" y="654">
+0.2
+</text>
+<path stroke="white" stroke-dasharray="1,2" d="M75 572l891 0"/>
+<text stroke="none" fill="white" font-size="16" x="43" y="580">
+0.4
+</text>
+<path stroke="white" stroke-dasharray="1,2" d="M75 498l891 0"/>
+<text stroke="none" fill="white" font-size="16" x="43" y="506">
+0.6
+</text>
+<path stroke="white" stroke-dasharray="1,2" d="M75 424l891 0"/>
+<text stroke="none" fill="white" font-size="16" x="43" y="432">
+0.8
+</text>
+<path stroke="white" stroke-dasharray="1,2" d="M75 350l891 0"/>
+<text stroke="none" fill="white" font-size="16" x="43" y="358">
+1.0
+</text>
+<path stroke="white" stroke-dasharray="1,2" d="M75 276l891 0"/>
+<text stroke="none" fill="white" font-size="16" x="43" y="284">
+1.2
+</text>
+<path stroke="white" stroke-dasharray="1,2" d="M75 202l891 0"/>
+<text stroke="none" fill="white" font-size="16" x="43" y="210">
+1.4
+</text>
+<path stroke="white" stroke-dasharray="1,2" d="M75 128l891 0"/>
+<text stroke="none" fill="white" font-size="16" x="43" y="136">
+1.6
+</text>
+<path stroke="white" stroke-dasharray="1,2" d="M75 54l891 0"/>
+<text stroke="none" fill="white" font-size="16" x="43" y="62">
+1.8
+</text>
+<text stroke="none" fill="white" font-size="16" x="10" y="32">
+V
+</text>
+<path stroke="red" d="M445 23l44 0"/>
+<text stroke="none" fill="white" font-size="16" x="499" y="32">
+dc1.out
+</text>
+<path stroke="red" d="M75 54l277 0 5 1 20 0 5 1 5 0 5 1 5 0 15 3 5 2 5 1 4 2 5 2 10 6 10 8 10 12 5 8 5 11 5 14 5 21 5 33 5 41 10 84 5 43 15 126 4 40 5 39 5 38 5 33 5 24 5 16 5 9 5 7 5 6 5 4 15 9 20 8 5 1 5 2 5 1 4 1 5 1 5 0 15 3 5 0 5 1 10 0"/>
+<path stroke="red" d="M669 717l5 1 10 0 5 1 30 0 4 1 243 0"/>
+<path stroke="blue" d="M75 23l44 0"/>
+<text stroke="none" fill="white" font-size="16" x="129" y="32">
+dc2.out
+</text>
+<path stroke="blue" d="M75 128l272 0 5 1 15 0 5 1 5 0 20 4 10 4 10 6 5 5 4 6 5 9 5 13 5 27 5 40 5 44 5 45 10 88 5 43 5 42 5 41 5 40 5 37 5 32 5 20 5 11 5 7 5 5 5 4 4 2 5 3 5 2 5 1 5 2 10 2 5 0 10 2 5 0 5 1 10 0 5 1 25 0 4 1 342 0"/>
+<path stroke="#FFA500" d="M445 39l44 0"/>
+<text stroke="none" fill="white" font-size="16" x="499" y="48">
+dc3.out
+</text>
+<path stroke="#FFA500" d="M75 202l257 0 5 1 10 0 5 1 5 0 15 3 5 3 5 2 5 5 5 7 5 16 5 39 5 46 10 90 5 44 4 43 5 41 5 40 5 37 5 35 5 28 5 15 5 6 5 4 5 3 10 4 10 2 5 0 5 1 5 0 5 1 19 0 5 1 431 0"/>
+<path stroke="green" d="M75 39l44 0"/>
+<text stroke="none" fill="white" font-size="16" x="129" y="48">
+dc4.out
+</text>
+<path stroke="green" d="M75 276l233 0 5 1 10 0 4 1 5 0 5 2 5 1 5 3 5 6 5 15 5 43 5 49 5 48 5 46 5 44 5 42 5 39 5 36 5 31 5 19 5 7 5 4 5 2 4 1 15 3 15 0 5 1 505 0"/>
+<path stroke="#FFC0C5" d="M445 55l44 0"/>
+<text stroke="none" fill="white" font-size="16" x="499" y="64">
+dc5.out
+</text>
+<path stroke="#FFC0C5" d="M75 350l208 0 5 1 5 0 15 3 5 2 5 5 5 14 4 45 5 51 5 48 5 47 5 43 5 39 5 33 5 22 5 8 5 3 5 2 15 3 10 0 5 1 559 0"/>
+<path stroke="#A52A2A" d="M75 55l44 0"/>
+<text stroke="none" fill="white" font-size="16" x="129" y="64">
+dc6.out
+</text>
+<path stroke="#A52A2A" d="M75 424l178 0 5 1 5 0 15 3 5 3 5 7 5 26 5 48 5 47 5 44 5 41 5 35 5 24 4 8 5 4 5 2 10 2 10 0 5 1 604 0"/>
+</svg>
